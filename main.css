@@ -50,3 +50,16 @@ body{
 .equal {
   margin-right: 40px;
 }
+
+.footer-wrapper {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-contact {
+  font-size: 16px;
+  color: rgb(0, 110, 114);
+  text-decoration: none;
+}
