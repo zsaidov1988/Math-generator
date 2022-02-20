@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashqlar</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Mashqlar</h1>
+        <hr />
+        <h2>Ko`paytirish</h2>
+        <div class="box">
+          <p class="js-multi-expression expression">Misollar</p>
+          <input
+            class="js-multi-result result"
+            type="text"
+            placeholder="Natija"
+            disabled
+          />
+        </div>
+        <div class="btns">
+          <button class="js-multi-generate generate">Misol yaratish</button>
+          <button class="js-multi-check check">Tekshirish</button>
+        </div>
+        <hr />
+        <h2>Tenglama</h2>
+        <div class="box">
+          <p class="js-equal-expression expression equal">Tenglama</p>
+          <label class="equal-label" for="x-input">x =</label>
+          <input
+            id="x-input"
+            class="js-equal-result result"
+            type="text"
+            placeholder="Natija"
+            disabled
+          />
+        </div>
+        <div class="btns">
+          <button class="js-equal-generate generate">Tenglama yaratish</button>
+          <button class="js-equal-check check">Tekshirish</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/misol.js"></script>
+    <script src="./js/equal.js"></script>
+  </body>
+</html>

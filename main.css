@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  background-color: aquamarine;
+}
+
+.container {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.expression, .equal-label {
+  font-size: 30px;
+}
+
+.result{
+  margin-left: 10px;
+  width: 150px;
+  font-size: 30px;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.generate,
+.check {
+  font-size: 30px;
+  border: 2px solid rgb(0, 110, 114);
+  border-radius: 5px;
+  background-color: none;
+}
+
+.equal {
+  margin-right: 40px;
+}
