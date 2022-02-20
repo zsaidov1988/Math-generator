@@ -37,8 +37,13 @@ elEqualGenerate.addEventListener("click", (e) => {
       equalResult = equal1 + equal2 - equal3;
       expression = `${equal1} + ${equal2} - ${equal3} = ${equalResult}`;
     } else {
-      equalResult = equal1 - equal2 + equal3;
-      expression = `${equal1} - ${equal2} + ${equal3} = ${equalResult}`;
+      if (equal1 > equal2) {
+        equalResult = equal1 - equal2 + equal3;
+        expression = `${equal1} - ${equal2} + ${equal3} = ${equalResult}`;
+      } else {
+        equalResult = equal2 - equal1 + equal3;
+        expression = `${equal2} - ${equal1} + ${equal3} = ${equalResult}`;
+      }
     }
   }
   expression = expression.replace(x, "x");
