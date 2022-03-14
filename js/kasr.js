@@ -10,8 +10,8 @@ let surat, mahraj, butun;
 elKasrGenerate.addEventListener("click", (e) => {
   e.preventDefault();
   do {
-    surat = getRndInteger(10, 99);
-    mahraj = getRndInteger(2, 9);
+    surat = getRndInteger(10, 999);
+    mahraj = getRndInteger(2, 99);
   } while (surat <= mahraj || surat % mahraj == 0 || surat / mahraj < 1);
   elKasr.textContent = `${surat} / ${mahraj}`;
   elButunNatija.value = "";
