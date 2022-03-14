@@ -1,14 +1,14 @@
-body{
+/* body{
   margin: 0;
   background-color: aquamarine;
-}
+} */
 
-.container {
+/* .container {
   width: 700px;
   margin-right: auto;
   margin-left: auto;
   
-}
+} */
 
 .box {
   display: flex;
@@ -22,6 +22,7 @@ body{
 
 .expression, .equal-label {
   font-size: 30px;
+  margin: 0;
 }
 
 .result{
@@ -62,4 +63,20 @@ body{
   font-size: 16px;
   color: rgb(0, 110, 114);
   text-decoration: none;
+}
+
+.kasr {
+  display: flex;
+  align-items: center;
+}
+
+.kasr input {
+  width: 80px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.kasr hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

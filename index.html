@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mashqlar</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <div class="wrapper">
       <div class="container">
         <h1>Mashqlar</h1>
@@ -26,6 +64,42 @@
         <div class="btns">
           <button class="js-multi-generate generate">Misol yaratish</button>
           <button class="js-multi-check check">Tekshirish</button>
+        </div>
+        <hr />
+        <h2>Kasrni noto'g'ri kasrga aylantiring</h2>
+        <div class="box">
+          <p class="js-fraction-expression expression equal">Kasr</p>
+          <div class="kasr">
+            <label for="" style="font-size: 24px; margin-right: 5px"
+              >Natija:
+            </label>
+            <input
+              class="js-fraction-int-result result"
+              style="margin-right: 5px"
+              type="text"
+              placeholder="Butun"
+              disabled
+            />
+            <div>
+              <input
+                class="js-fraction-surat-result result"
+                type="text"
+                placeholder="Surat"
+                disabled
+              />
+              <hr />
+              <input
+                class="js-fraction-mahraj-result result"
+                type="text"
+                placeholder="Mahraj"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="js-fraction-generate generate">Misol yaratish</button>
+          <button class="js-fraction-check check">Tekshirish</button>
         </div>
         <hr />
         <h2>Tenglama</h2>
@@ -56,7 +130,9 @@
         </div>
       </div>
     </footer>
-
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/func.js"></script>
+    <script src="./js/kasr.js"></script>
     <script src="./js/misol.js"></script>
     <script src="./js/equal.js"></script>
   </body>
